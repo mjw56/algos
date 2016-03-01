@@ -1,5 +1,20 @@
 import expect from 'expect';
 
+/**
+ *
+ * The in-place version of quicksort has a space complexity of O(log n), 
+ * even in the worst case, when it is carefully implemented using the 
+ * following strategies: in-place partitioning is used. This unstable 
+ * partition requires O(1) space.
+ *
+ * Time Complexity:
+ * 
+ * Best: O(n log(n))
+ * Average: O(n log(n))
+ * Worst: O(n^2)
+ *
+ */
+
 function partition(arr, lo, hi) {
   let pivot = arr[Math.floor((hi + lo) / 2)],
       i = lo,
