@@ -1,0 +1,7 @@
+{
+  "extends": "mikewilcox",
+  "rules": {
+    "no-param-reassign": 0,
+    "no-trailing-spaces": 0
+  }
+}
