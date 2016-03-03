@@ -1,5 +1,16 @@
 import expect from 'expect';
 
+/**
+ *
+ * Binary Search Algorithm
+ *
+ * Worst case performance  O(log n)
+ * Best case performance O(1)
+ * Average case performance  O(log n)
+ * Worst case space complexity O(1)
+ *
+ */
+
 const binarySearch = (arr, value, lo = 0, hi = arr.length - 1) => {
   const mid = Math.floor((hi + lo) / 2);
 
