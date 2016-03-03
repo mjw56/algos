@@ -12,6 +12,10 @@ import expect from 'expect';
  */
 
 export default function binarySearch(arr, value, lo = 0, hi = arr.length - 1) {
+  if (hi < lo) {
+    return -1;
+  }
+
   const mid = Math.floor((hi + lo) / 2);
 
   if (!arr || !arr.length) {
@@ -35,3 +39,5 @@ expect(binarySearch(arr, 1)).toEqual(0);
 expect(binarySearch(arr, 5)).toEqual(4);
 expect(binarySearch(arr, 10)).toEqual(9);
 expect(binarySearch([], 10)).toEqual(-1);
+expect(binarySearch(arr, 12)).toEqual(-1);
+expect(binarySearch(arr, 0)).toEqual(-1);
