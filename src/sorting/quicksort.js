@@ -3,7 +3,6 @@ import expect from 'expect';
 /**
  * Quicksort Algorithm
  *
- *
  * The in-place version of quicksort has a space complexity of O(log n),
  * even in the worst case, when it is carefully implemented using the
  * following strategies: in-place partitioning is used. This unstable
