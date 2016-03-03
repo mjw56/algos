@@ -7,5 +7,5 @@ mkdir dist/
 
 npm run lint
 
-babel sorting \
-  --out-dir dist/sorting
+babel src \
+  --out-dir dist
