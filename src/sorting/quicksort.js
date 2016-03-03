@@ -1,6 +1,8 @@
 import expect from 'expect';
 
 /**
+ * Quicksort Algorithm
+ *
  *
  * The in-place version of quicksort has a space complexity of O(log n),
  * even in the worst case, when it is carefully implemented using the
@@ -32,7 +34,7 @@ function partition(arr, lo, hi) {
     if (i <= j) {
       // swap
       [arr[i], arr[j]] = [arr[j], arr[i]];
-      
+
       // continue
       i++;
       j--;
