@@ -14,9 +14,15 @@ import expect from 'expect';
  * Best: O(n log(n))
  * Average: O(n log(n))
  * Worst: O(n^2)
- *
  */
 
+/**
+ * Partitions an array on the pivot
+ *
+ * @param {array} arr
+ * @param {number} lo
+ * @param {number} hi
+ */
 function partition(arr, lo, hi) {
   const pivot = arr[Math.floor((hi + lo) / 2)];
   let i = lo;
@@ -44,6 +50,14 @@ function partition(arr, lo, hi) {
   return i;
 }
 
+/**
+ * Sorts an arry in ascending order
+ *
+ * @param {array} arr
+ * @param {?number} lo
+ * @param {?number} hi
+ * @returns {array}
+ */
 export default function quicksort(arr, lo = 0, hi = arr.length - 1) {
   if (arr.length) {
     const index = partition(arr, lo, hi);
