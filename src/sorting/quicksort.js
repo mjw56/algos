@@ -21,6 +21,7 @@ import expect from 'expect';
  * @param {array} arr
  * @param {number} lo
  * @param {number} hi
+ * @returns {number} partition
  */
 function partition(arr, lo, hi) {
   const pivot = arr[Math.floor((hi + lo) / 2)];
