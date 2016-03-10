@@ -1,5 +1,3 @@
-import expect from 'expect';
-
 /**
  * Quicksort Algorithm
  *
@@ -73,11 +71,3 @@ export default function quicksort(arr, lo = 0, hi = arr.length - 1) {
 
   return arr;
 }
-
-expect(
-  quicksort([5, 2, 1, 8, 3, 9, 0, 4, 7, 6])
-).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
-
-expect(
-  quicksort([])
-).toEqual([]);
