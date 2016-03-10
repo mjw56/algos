@@ -1,24 +1,18 @@
 export default class Bst {
   root;
 
-  constructor(init) {
-    if (init) {
-      this.root = this._createNode(init);
-    }
+  constructor() {
+    this.root = null;
   }
 
   add(value) {
     this._insert(this.root, value);
   }
 
-  getRoot() {
-    return this.root;
-  }
-
   /* eslint-disable consistent-return */
   _insert(node, value) {
-    if (!node) {
-      node = this._createNode(value);
+    if (!this.root) {
+      this.root = this._createNode(value);
       return;
     }
 
