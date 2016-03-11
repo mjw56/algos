@@ -17,6 +17,28 @@ export default class LinkedList {
     this.tail = this.tail.next;
   }
 
+  remove(value) {
+    if (this.head.value === value) {
+      this.head = this.head.next;
+      return;
+    }
+
+    let curr = this.head;
+
+    while (curr.next) {
+      if (curr.next.value === value) {
+        if (this.tail.value === curr.next.value) {
+          this.tail = curr;
+        }
+
+        curr.next = curr.next.next;
+        break;
+      }
+
+      curr = curr.next;
+    }
+  }
+
   _createNode(value) {
     return {
       value,
