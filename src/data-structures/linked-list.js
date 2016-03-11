@@ -40,6 +40,14 @@ export default class LinkedList {
     }
   }
 
+  getFirst() {
+    return this.head;
+  }
+
+  getLast() {
+    return this.tail;
+  }
+
   _createNode(value) {
     return {
       value,
