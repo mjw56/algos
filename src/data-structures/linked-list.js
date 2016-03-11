@@ -48,6 +48,18 @@ export default class LinkedList {
     return this.tail;
   }
 
+  toArray() {
+    let curr = this.head;
+    let arr = [];
+
+    while (curr) {
+      arr.push(curr.value);
+      curr = curr.next;
+    }
+
+    return arr;
+  }
+
   _createNode(value) {
     return {
       value,
