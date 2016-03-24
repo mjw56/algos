@@ -18,6 +18,22 @@ export default class LinkedList {
     this.tail = this.tail.next;
   }
 
+  find(value) {
+    if (this.head.value === value) {
+      return true;
+    }
+
+    let curr = this.head;
+
+    while (curr) {
+      if (curr.value === value) return true;
+
+      curr = curr.next;
+    }
+
+    return false;
+  }
+
   remove(value) {
     if (this.head.value === value) {
       this.head = this.head.next;
